@@ -33,6 +33,11 @@ export const dataCategory = [
 
 export const dataProgram = [
   {
+    img: "/TM.jpeg",
+    title: "Science & technology",
+    id: 2,
+  },
+  {
     img: "/CP2.jpeg",
     title: "Commodity Procurement",
     id: 1,
@@ -43,10 +48,11 @@ export const dataProgram = [
     id: 2,
   },
   {
-    img: "/dairy.jpeg",
-    title: "Diary",
+    img: "/TM.jpeg",
+    title: "Transportation & marketing",
     id: 2,
   },
+
   {
     img: "/FTPP.jpeg",
     title: "fair trade practices",
@@ -59,7 +65,7 @@ export const dataProgram = [
   },
   {
     img: "/homepage_programs_lp.png",
-    title: "Livestock and poultry",
+    title: "Livestock & poultry",
     id: 2,
   },
   {
@@ -68,13 +74,14 @@ export const dataProgram = [
     id: 2,
   },
   {
-    img: "/S&T.jpeg",
-    title: "Science and technology",
+    img: "/dairy.jpeg",
+    title: "Diary",
     id: 2,
   },
+
   {
-    img: "/TM.jpeg",
-    title: "Transportation and marketing",
+    img: "/S&T.jpeg",
+    title: "Science & technology",
     id: 2,
   },
 ];

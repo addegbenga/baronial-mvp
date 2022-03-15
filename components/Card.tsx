@@ -7,10 +7,10 @@ type dataProps = {
 };
 const Card = ({ data }: dataProps) => {
   return (
-    <div className="flex flex-col gap-5">
+    <div className="flex lg:max-w-[75rem] lg:mx-auto flex-col lg:grid lg:grid-cols-3 gap-5">
       {data.map(({ img, title }, index) => (
         <div key={index} className=" relative">
-          <div className="w-full h-64  overflow-y-hidden">
+          <div className="w-full h-64 lg:h-80  overflow-y-hidden">
             <Image
               src={img}
               height="100%"

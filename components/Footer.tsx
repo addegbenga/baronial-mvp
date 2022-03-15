@@ -31,19 +31,25 @@ const data1 = [
 const Footer: NextPage = () => {
   return (
     <div>
-      <h1 className="py-4 px-4 text-green-800 underline">Return to top</h1>
-      <div className="bg-gray-100 pb-14 ">
-        <div className="flex  flex-col">
-          {data1.map((item, idx) => (
-            <div
-              className="border-b px-4 bg-gray-100 border-opacity-30 border-black py-5 font-bold"
-              key={idx}
-            >
-              <h1>{item.title}</h1>
-            </div>
-          ))}
+      <h1 className="py-4 px-4 text-green-800 underline lg:container lg:mx-auto">
+        Return to top
+      </h1>
+      <div className="bg-gray-100 pb-14  ">
+        <div className="bg-gray-200">
+          <div className="flex lg:container  lg:mx-auto flex-col  lg:flex-row">
+            {data1.map((item, idx) => (
+              <div
+                className="border-b lg:border-0 px-4 lg:px-6  border-opacity-30 border-black py-5 font-bold"
+                key={idx}
+              >
+                <div>
+                  <h1>{item.title}</h1>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
-        <div className="text-sm px-4 py-8 flex flex-col gap-2 ">
+        <div className="text-sm px-4 lg:container lg:flex-row lg:justify-between lg:mx-auto py-8 flex flex-col gap-2 ">
           <div className="flex flex-col gap-2">
             <h1>Site Map</h1>
             <h1>Policies and Links</h1>
@@ -64,9 +70,17 @@ const Footer: NextPage = () => {
             <h1>Non-Discrimination Statement</h1>
             <h1>Anti-Harassment Policy</h1>
           </div>
+          <div className="flex flex-col gap-2">
+            <h1>USA.gov</h1>
+            <h1>Whitehouse.gov</h1>
+            <h1>eGov</h1>
+            <h1>Feedback</h1>
+          </div>
 
-          <div className="mt-8">
-            <h1 className="text-2xl font-bold mb-3 ">Sign up for updates</h1>
+          <div className="mt-8 lg:mt-0 lg:flex lg:flex-col  lg:w-1/3">
+            <h1 className="text-2xl font-bold mb-3 lg:text-xl">
+              Sign up for updates
+            </h1>
             <div className="flex flex-col gap-3">
               <h1 className="text-lg">Your email address</h1>
               <input className="p-2 border py-3 border-black" name="input" />
@@ -75,8 +89,8 @@ const Footer: NextPage = () => {
           </div>
         </div>
       </div>
-      <div>
-        <div className="flex bg-white px-4 py-4 flex-col  justify-between">
+      <div className="bg-white">
+        <div className="flex bg-white px-4 py-4 flex-col lg:container lg:mx-auto lg:flex-row  justify-between">
           <div className="flex gap-2  items-center">
             <div className="w-14  h-14">
               <Image

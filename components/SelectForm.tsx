@@ -18,7 +18,7 @@ export default function SelectForm() {
   const [selected, setSelected] = useState(people[0]);
 
   return (
-    <div className="w-full">
+    <div className="w-full lg:max-w-md lg:mx-auto">
       <Listbox value={selected} onChange={setSelected}>
         <div className="relative mt-1">
           <Listbox.Button className="relative w-full py-3.5  pl-3 pr-10 text-left bg-white border border-black cursor-default focus:outline-none focus-visible:ring-2 focus-visible:ring-opacity-75 focus-visible:ring-white focus-visible:ring-offset-orange-300 focus-visible:ring-offset-2 focus-visible:border-indigo-500 sm:text-sm">
