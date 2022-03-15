@@ -1,4 +1,8 @@
 import { NextPage } from "next";
+import Image from "next/image";
+import { BsFacebook, BsRssFill } from "react-icons/bs";
+import { AiFillTwitterCircle } from "react-icons/ai";
+import { TiSocialYoutubeCircular } from "react-icons/ti";
 
 const data1 = [
   {
@@ -28,7 +32,7 @@ const Footer: NextPage = () => {
   return (
     <div>
       <h1 className="py-4 px-4 text-green-800 underline">Return to top</h1>
-      <div className="bg-gray-100 ">
+      <div className="bg-gray-100 pb-14 ">
         <div className="flex  flex-col">
           {data1.map((item, idx) => (
             <div
@@ -68,6 +72,34 @@ const Footer: NextPage = () => {
               <input className="p-2 border py-3 border-black" name="input" />
               <button className="bg-yellow-600 font-bold p-3">Sign up</button>
             </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div className="flex bg-white px-4 py-4 flex-col  justify-between">
+          <div className="flex gap-2  items-center">
+            <div className="w-14  h-14">
+              <Image
+                src="/usda-symbol.svg"
+                width={100}
+                height={100}
+                alt="logo"
+                layout="responsive"
+              />
+            </div>
+            <div className="">
+              <h1 className="text-sm">Agricultural Marketing Service</h1>
+              <p className="text-[0.6rem]">U.S DEPARTMENT OF AGRICULTURE</p>
+            </div>
+          </div>
+          <div className="flex gap-4 pr-14 items-center flex-wrap ">
+            <AiFillTwitterCircle color="#1DA1F2" size={34} />
+            <BsFacebook size={28} color="#4267B2" />
+            <TiSocialYoutubeCircular color="#FF0000" size={34} />
+            <AiFillTwitterCircle color="#1DA1F2" size={34} />
+            <BsFacebook size={28} color="#4267B2" />
+            <TiSocialYoutubeCircular color="#FF0000" size={34} />
+            <BsRssFill color="#ee802f" size={30} />
           </div>
         </div>
       </div>

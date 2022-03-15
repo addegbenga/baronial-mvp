@@ -26,7 +26,7 @@ const Home: NextPage = () => {
                 governing fair and competitive marketing and contract growing of
                 livestock and poultry
               </p>
-              <button className="bg-yellow-700 flex w-1/2 mx-auto item-center justify-center rounded mt-5 text-black font-bold p-2.5 px-4">
+              <button className="bg-yellow-600 flex w-1/2 mx-auto item-center justify-center rounded mt-5 text-black font-bold p-2.5 px-4">
                 Learn more
               </button>
             </div>
