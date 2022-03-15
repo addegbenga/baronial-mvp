@@ -1,5 +1,6 @@
 import type { NextPage } from "next";
 import Script from "next/script";
+import Footer from "../components/Footer";
 import HeroSection from "../components/Hero";
 import CategorySection from "../components/Home/Category";
 import LookingForSection from "../components/Home/LookFor";
@@ -14,16 +15,18 @@ const Home: NextPage = () => {
         <Navbar />
         <Subnavbar />
         <HeroSection>
-          <div className="py-14">
+          <div className="py-20">
             <div className="bg-white mx-4 p-8 flex flex-col  text-center">
-              <h1 className="text-3xl font-bold">Farmer Fairness</h1>
+              <h1 className="text-3xl font-bold text-green-700">
+                Farmer Fairness
+              </h1>
               <p className="py-3 text-lg">
                 You can file a complaint or tip if you suspect a violation of
                 the Packers and Stockyards Act or any other Federal law
                 governing fair and competitive marketing and contract growing of
                 livestock and poultry
               </p>
-              <button className="bg-yellow-600 flex w-1/2 mx-auto item-center justify-center rounded mt-5 text-white p-2 px-4">
+              <button className="bg-yellow-700 flex w-1/2 mx-auto item-center justify-center rounded mt-5 text-black font-bold p-2.5 px-4">
                 Learn more
               </button>
             </div>
@@ -33,6 +36,7 @@ const Home: NextPage = () => {
         <CategorySection />
         <ProgramSection />
         <TweetSection />
+        <Footer />
       </div>
       <Script
         async

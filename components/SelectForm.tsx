@@ -6,7 +6,7 @@ import {
 } from "react-icons/ai";
 
 const people = [
-  { name: "Select an input" },
+  { name: "What are you looking for?" },
   { name: "Arlene Mccoy" },
   { name: "Devon Webb" },
   { name: "Tom Cook" },

@@ -4,13 +4,13 @@ import Image from "next/image";
 const Navbar: NextPage = () => {
   return (
     <div>
-      <div className="flex justify-between">
-        <div className="flex gap-2 items-center">
-          <div className="w-12  h-12">
+      <div className="flex bg-white  justify-between">
+        <div className="flex gap-2  items-center">
+          <div className="w-14  h-14">
             <Image
               src="/usda-symbol.svg"
-              width={60}
-              height={60}
+              width={100}
+              height={100}
               alt="logo"
               layout="responsive"
             />
@@ -20,7 +20,7 @@ const Navbar: NextPage = () => {
             <p className="text-[0.6rem]">U.S DEPARTMENT OF AGRICULTURE</p>
           </div>
         </div>
-        <button className="p-3 text-white bg-green-800 text-sm">Menu</button>
+        <button className="p-3.5 text-white bg-green-800 text-sm">Menu</button>
       </div>
     </div>
   );
