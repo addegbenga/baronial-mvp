@@ -38,9 +38,9 @@ const Farmersmarkets: NextPage = () => {
           <p>
             Visit our Local Food Directories page to find other operations
             offering locally grown products. If you are a market manager visit
-            our Local Food Directory Registration & Update page to add or update
-            a market listing. An API is available for developers to integrate
-            this data into other applications.
+            our Local Food Directory Registration Update page to add or update a
+            market listing. An API is available for developers to integrate this
+            data into other applications.
           </p>
         </div>
         <div className="text-xs flex flex-col gap-3">
