@@ -1,13 +1,15 @@
 type reactChild = {
   children: React.ReactNode;
+  background: any;
+  height: number;
 };
 
-const HeroSection = ({ children }: reactChild) => {
+const HeroSection = ({ background, height, children }: reactChild) => {
   return (
     <div
-      className="h-[30rem]"
+      className={`h-[${height}rem]`}
       style={{
-        background: "url(3marketnews.jpeg)",
+        background: `url(${background})`,
         backgroundSize: "cover",
         backgroundPosition: "cover",
       }}

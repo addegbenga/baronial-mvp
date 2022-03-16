@@ -1,17 +1,18 @@
 import { Fragment, useState } from "react";
 import { Listbox, Transition } from "@headlessui/react";
+import Link from "next/link";
 import {
   AiFillCheckCircle as CheckIcon,
   AiFillCheckCircle as SelectorIcon,
 } from "react-icons/ai";
 
 const people = [
-  { name: "What are you looking for?" },
-  { name: "Arlene Mccoy" },
-  { name: "Devon Webb" },
-  { name: "Tom Cook" },
-  { name: "Tanya Fox" },
-  { name: "Hellen Schmidt" },
+  { name: "What are you looking for?", url: "/" },
+  { name: "Farmersmarkets", url: "/local-food-directories/Farmersmarkets" },
+  { name: "Devon Webb", url: "/local-food-directories/Farmersmarkets" },
+  { name: "Tom Cook", url: "/local-food-directories/Farmersmarkets" },
+  { name: "Tanya Fox", url: "/local-food-directories/Farmersmarkets" },
+  { name: "Hellen Schmidt", url: "/local-food-directories/Farmersmarkets" },
 ];
 
 export default function SelectForm() {
@@ -49,13 +50,16 @@ export default function SelectForm() {
                 >
                   {({ selected }) => (
                     <>
-                      <span
-                        className={`block truncate ${
-                          selected ? "font-medium" : "font-normal"
-                        }`}
-                      >
-                        {person.name}
-                      </span>
+                      <Link href={person.url} passHref>
+                        <span
+                          className={`block truncate ${
+                            selected ? "font-medium" : "font-normal"
+                          }`}
+                        >
+                          {person.name}
+                        </span>
+                      </Link>
+
                       {selected ? (
                         <span className="absolute inset-y-0 left-0 flex items-center pl-3 text-amber-600">
                           <CheckIcon className="w-5 h-5" aria-hidden="true" />

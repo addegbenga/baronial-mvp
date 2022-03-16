@@ -14,7 +14,7 @@ const Home: NextPage = () => {
       <div>
         <Navbar />
         <Subnavbar />
-        <HeroSection>
+        <HeroSection height={30} background="/3marketnews.jpeg">
           <div className="py-20  container mx-auto">
             <div className="bg-white lg:max-w-lg mx-4 p-8 flex flex-col  text-center">
               <h1 className="text-3xl lg:text-5xl font-bold text-green-700">
