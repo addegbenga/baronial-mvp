@@ -23,7 +23,7 @@ const Card = ({ data }: dataProps) => {
             </h1>
           </div>
 
-          <div className="h-64 bg-red-400 z-40 hidden absolute top-0 w-full"></div>
+          <div className="h-full bg-opacity-30 bg-black z-40  absolute top-0 w-full"></div>
         </div>
       ))}
     </div>
