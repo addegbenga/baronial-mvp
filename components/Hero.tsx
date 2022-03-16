@@ -7,11 +7,11 @@ type reactChild = {
 const HeroSection = ({ background, height, children }: reactChild) => {
   return (
     <div
-      className={`h-[${height}rem]`}
       style={{
         background: `url(${background})`,
         backgroundSize: "cover",
         backgroundPosition: "cover",
+        height: `${height}rem`,
       }}
     >
       {children}
