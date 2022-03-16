@@ -24,7 +24,7 @@ const Farmersmarkets: NextPage = () => {
           <h1>LOCAL FOOD DIRECTORIES: NATIONAL FARMERS MARKET DIRECTORY</h1>
         </div>
       </div>
-      <div className="container mx-auto">
+      <div className="container mx-auto pb-72">
         <div className="flex flex-col gap-4 py-10 max-w-6xl">
           <p>
             The Farmers Market Directory lists markets that feature two or more
